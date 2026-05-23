@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-pt-br",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "usernamehw.errorlens",
+    "github.vscode-pull-request-github"
+  ]
+}

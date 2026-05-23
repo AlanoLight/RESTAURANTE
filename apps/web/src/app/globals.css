@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(239, 107, 34, 0.22), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.18), transparent 35%);
+}

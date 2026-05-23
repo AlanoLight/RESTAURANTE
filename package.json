@@ -1,0 +1,21 @@
+{
+  "name": "restaurante-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,desktop -c blue,green \"npm run dev -w @restaurante/web\" \"npm run dev -w @restaurante/desktop\"",
+    "dev:web": "npm run dev -w @restaurante/web",
+    "dev:desktop": "npm run dev -w @restaurante/desktop",
+    "build": "npm run build -w @restaurante/web && npm run build -w @restaurante/desktop",
+    "build:web": "npm run build -w @restaurante/web",
+    "build:desktop": "npm run build -w @restaurante/desktop",
+    "package:exe": "npm run package -w @restaurante/desktop",
+    "lint": "npm run lint -w @restaurante/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

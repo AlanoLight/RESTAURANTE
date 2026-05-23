@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "group": "build"
+    },
+    {
+      "label": "Dev web",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev:web"],
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      "label": "Dev desktop",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev:desktop"],
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      "label": "Build all",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build"],
+      "group": "build"
+    },
+    {
+      "label": "Package EXE",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "package:exe"],
+      "group": "build"
+    }
+  ]
+}
