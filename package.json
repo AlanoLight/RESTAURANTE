@@ -13,7 +13,9 @@
     "build:web": "npm run build -w @restaurante/web",
     "build:desktop": "npm run build -w @restaurante/desktop",
     "package:exe": "npm run package -w @restaurante/desktop",
-    "lint": "npm run lint -w @restaurante/web"
+    "lint": "npm run lint -w @restaurante/web",
+    "sync": "bash .copilot/sync.sh",
+    "sync:win": "powershell -ExecutionPolicy Bypass -File .copilot/sync.ps1"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
