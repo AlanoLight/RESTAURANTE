@@ -90,3 +90,34 @@ Se quiser usar variaveis locais:
 - `npm run build:web` -> build apenas web
 - `npm run build:desktop` -> build apenas desktop
 - `npm run package:exe` -> gera instalador .exe
+- `npm run sync` -> sincroniza arquivos de contexto (Linux/Mac)
+- `npm run sync:win` -> sincroniza arquivos de contexto (Windows)
+
+## Sistema de Sincronizacao de Contexto
+
+Este projeto usa um sistema de sincronizacao para permitir trabalho continuo entre GitHub Copilot Chat (mobile/web) e VS Code Copilot (desktop).
+
+### Arquivos de Contexto
+
+- `.copilot/context.md` - Contexto atual do projeto
+- `.copilot/tasks.md` - Lista de tarefas e progresso
+- `.copilot/decisions.md` - Decisoes tecnicas
+- `.copilot/memory.md` - Padroes e convencoes
+- `.copilot/README.md` - Guia completo do sistema
+
+### Como Usar
+
+**No VS Code:**
+1. Leia `.copilot/context.md` ao iniciar
+2. Trabalhe normalmente
+3. Atualize contexto ao finalizar
+4. Execute `npm run sync` (ou `npm run sync:win`)
+5. Commit e push
+
+**No GitHub Copilot Chat:**
+1. Peca ao Copilot para ler `.copilot/context.md`
+2. Continue de onde parou
+3. Peca para atualizar contexto ao finalizar
+4. Commit e push
+
+Para mais detalhes, veja `.copilot/README.md`

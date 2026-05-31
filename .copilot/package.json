@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "sync": "bash .copilot/sync.sh",
+    "sync:win": "powershell -ExecutionPolicy Bypass -File .copilot/sync.ps1"
+  }
+}
